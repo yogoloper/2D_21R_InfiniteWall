@@ -6,6 +6,14 @@ public class PlayerController : MonoBehaviour
 {
     private JumpMovement jumpMovement;
     // Start is called before the first frame update
+
+
+    [Header("Wall Jump System")]
+    public Transform wallCheck;
+    bool isWallTouch;
+    bool isSliding;
+    public float wallSlidingSpeed;
+
     void Start()
     {
         jumpMovement = GetComponent<JumpMovement>();
